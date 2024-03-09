@@ -52,7 +52,7 @@ print(f'Sample size: {required_n}')
 # #### Load dataset using Pandas
 
 
-df = pd.read_csv('/Users/andrew/Downloads/ab_data.csv')
+df = pd.read_csv('/ab_data.csv')
 
 # Inspect dataset
 
