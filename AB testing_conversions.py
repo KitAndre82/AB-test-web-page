@@ -1,14 +1,12 @@
-#!/usr/bin/env python
-# coding: utf-8
 
-# # AB Testing
+# AB Testing
 
-# #### In this experiment, the design team is considering implementing a new version of a product page. But before they do that, they want to be sure that the conversion rate of 13% achieved by the old version will be increased by 2% when the new version is implemented. The new version is only viable if it can achieve a conversion rate of 15%. 
-# 
-# #### Given we don’t know if the new design will perform better or worse (or the same) as our current design, we’ll choose a two-tailed test:
-# 
+# In this experiment, the design team is considering implementing a new version of a product page. But before they do that, they want to be sure that the conversion rate of 13% achieved by the old version will be increased by 2% when the new version is implemented. The new version is only viable if it can achieve a conversion rate of 15%. 
+
+# Given we don’t know if the new design will perform better or worse (or the same) as our current design, we’ll choose a two-tailed test:
+
 # Hₒ: p = pₒ
-# 
+
 # Hₐ: p ≠ pₒ
 # 
 # Where p is the conversion rate of the new version and pₒ is the conversion rate of the old version.
@@ -158,7 +156,6 @@ print(f'z statistic: {z_stat:.2f}')
 print(f'p-value: {pval:.3f}')
 print(f'ci 95% for control group: [{lower_con:.3f}, {upper_con:.3f}]')
 print(f'ci 95% for treatment group: [{lower_treat:.3f}, {upper_treat:.3f}]')
-
 
 # #### Since our p-value=0.732 is way above our α=0.05 threshold, we cannot reject the Null hypothesis Hₒ, which means that our new design did not perform significantly different (let alone better) than our old one.
 # 
